@@ -1,0 +1,25 @@
+node_modules/
+dist/
+.env
+.env.*
+!.env.example
+*.log
+.DS_Store
+coverage/
+.local/
+
+# Credentials and private keys
+credentials.json
+credentials.*.json
+service-account*.json
+*.pem
+*.key
+*.p12
+*.pfx
+id_rsa
+id_ed25519
+
+# Local database exports
+*.dump
+*.backup
+*.sql.gz

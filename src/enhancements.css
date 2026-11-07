@@ -1,0 +1,7 @@
+/* Small accessibility improvements; visual design comes from the reference. */
+input:focus-visible, textarea:focus-visible { outline: 3px solid #d8803980; outline-offset: 2px; }
+.button { cursor: pointer; }
+.form-status { padding: 18px; border: 1px solid var(--line); background: var(--mist); border-radius: 4px; }
+.form-status.error { border-color: #a12c1e; color: #a12c1e; }
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation-duration: .01ms !important; scroll-behavior: auto !important; } }

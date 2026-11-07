@@ -1,0 +1,37 @@
+# Only send application build inputs to the remote builder.
+**
+!Dockerfile
+!.dockerignore
+!package.json
+!package-lock.json
+!index.html
+!vite.config.js
+!src/
+!src/**
+!public/
+!public/**
+!server/
+!server/app.mjs
+!server/db.mjs
+!server/drafts.mjs
+!server/browser-drafts.mjs
+!server/index.mjs
+!server/migrate.mjs
+!server/validation.mjs
+!migrations/
+!migrations/*.sql
+
+# Keep credentials excluded even if accidentally placed inside source folders.
+**/.env
+**/.env.*
+**/credentials*.json
+**/service-account*.json
+**/*.pem
+**/*.key
+**/*.p12
+**/*.pfx
+**/id_rsa
+**/id_ed25519
+**/*.dump
+**/*.backup
+**/*.sql.gz

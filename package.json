@@ -1,0 +1,28 @@
+{
+  "name": "firdbird-website",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node scripts/dev.mjs",
+    "dev:client": "vite --host 127.0.0.1",
+    "server": "node server/index.mjs",
+    "build": "vite build",
+    "start": "node server/index.mjs",
+    "db:migrate": "node server/migrate.mjs",
+    "test:backend": "node --test server/*.test.mjs",
+    "stop:local": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/stop-local.ps1"
+  },
+  "dependencies": {
+    "dotenv": "^18.0.9",
+    "express": "^5.3.0",
+    "multer": "^2.5.0",
+    "pg": "^8.23.1",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^6.2.1",
+    "vite": "^8.3.6"
+  }
+}
